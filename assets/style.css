@@ -97,6 +97,11 @@ body{
             margin-bottom : 30px;
         }
 
+            #comment-section-title{
+                margin: 10px 0;
+                font-size: 1.3rem;
+            }
+
             form{
                 display: flex;
                 flex-direction: column;
