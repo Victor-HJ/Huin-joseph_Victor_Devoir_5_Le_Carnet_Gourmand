@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Le Carnet Gourmand </title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header class="page-container" id="header-container">
+
+            <div id="logo-container">
+                <p id="logo"> 🍲 </p> 
+            </div>
+            <div id="beside-logo">
+                <h1 class = "titles" id="page-title"> Le Carnet Gourmand </h1>
+                <p class="subtitles" id="page-title-subtitle"> Avis des lecteurs </p>
+            </div>
+        
+    </header>
+
+    <main class="page-container" id="main-container"> 
+        <div class="major-container" id="left-main">
+
+            <h2 class="titles" id="recipe-title"> Pâtes crémeuses au citron </h2>
+            <p class="subtitles"> Laissez votre avis sur cette recette grâce au formulaire ci-contre.</p>
+
+            <div id="recipe-container">
+                <section class="recipe-section">
+
+                    <h3 class="titles recipe-section-title"> Ingrédients </h3>
+
+                    <ul id="recipe-ingredients-list">
+
+                        <li> Pâtes </li>
+                        <li> Crème </li>
+                        <li> Citron </li>
+                        <li> Parmesan </li>
+
+                    </ul>
+                </section>
+
+                <section class="recipe-section">
+
+                    <h3 class="titles recipe-section-title"> Préparation </h3>
+
+                    <ul id="recipe-cooking-list">
+
+                        <li> Cuire les pâtes </li>
+                        <li> Mélanger la crème et le citron </li>
+                        <li> Ajouter le parmesan </li>
+
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <aside class="major-container" id="right-main">
+            <section id="form-section">
+
+                <h3> Laissez un commentaire </h3>
+
+                <form action="" id="name-form">
+                    <label for="name"> Votre nom </label>
+                    <input type="text" placeholder="Ex : Léa" id="commenter-name">
+                    <p class="form-subtitles"> Minimum 2 caractères </p>
+                </form>
+
+                <form action="" id="comment-form">
+                    <label for="comment"> Votre commentaire </label>
+                    <textarea type="text" placeholder="Votre avis sur la recette..." rows="4" id="comment-content"></textarea>
+                    <p class="form-subtitles"> Minimum 10 caractères </p>
+                </form>
+
+                <div>
+
+                    <button id="submit"> Publier </button>
+
+                    <div id="warning"></div>
+
+                </div>
+
+            </section>
+
+            <section>
+
+                <h3 class="titles" id="comment-list-title"> Commentaires </h3>
+
+                <div id="comments-list"> 
+                    <article class="comment">
+
+                        <h4 class="comment-title"> Téo </h4>
+                        <p class="comment-content"> Superbe recette !</p>
+
+                        <button class="delete-button"> 
+                            🗑️ Supprimer
+                        </button>
+
+                    </article>
+
+                    <article class="comment">
+
+                        <h4 class="comment-title"> Léa </h4>
+                        <p class="comment-content"> Test de commentaire </p>
+
+                        <button class="delete-button"> 
+                            🗑️ Supprimer
+                        </button>
+
+                    </article>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <footer class= "page-container" id="footer-container">
+
+        <p class="subtitles"> Devoir JavaScript —— Frontend </p>
+
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
